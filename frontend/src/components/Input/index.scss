@@ -1,0 +1,43 @@
+.input-container {
+    width: 25rem;
+    position: relative;
+
+    .input-label {
+        z-index: 999;
+        position: absolute;
+        top: -0.6875rem;
+        left: 0.375rem;
+        color: var(--gray-400);
+        font-size: 0.875rem;
+        padding: 0 0.5rem;
+    }
+
+    .password-eye {
+        z-index: 999;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.625rem;
+        color: var(--gray-400);
+        cursor: pointer;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .input-content {
+        height: 2.5rem;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid var(--gray-400);
+        outline: none;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .input-content:focus {
+        outline: none;
+        border: none;
+        box-shadow: 0 0 0 2px #49b4bb;
+    }
+    .input-content::placeholder {
+        color: var(--gray-500);
+    }
+}

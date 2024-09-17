@@ -1,0 +1,60 @@
+.container-login {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .login-form-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+        position: relative;
+    }
+
+    .checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .checkbox-label {
+        position: relative;
+        padding-left: 2rem;
+        cursor: pointer;
+        user-select: none;
+        font-size: 1rem;
+        color: var(--gray-400);
+    }
+
+    .checkbox-label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        transition: background-color 0.3s;
+        border-radius: 4px;
+    }
+
+    .checkbox:checked + .checkbox-label::before {
+        background-color: #49b4bb;
+    }
+
+    .footer-buttons {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

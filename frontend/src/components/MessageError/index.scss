@@ -1,0 +1,10 @@
+.error-content {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    .error-text {
+        color: #d2122e;
+        font-size: 0.875rem;
+    }
+}

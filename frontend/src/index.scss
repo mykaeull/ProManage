@@ -1,0 +1,211 @@
+:root {
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+
+    --max-width: 1100px;
+    --border-radius: 12px;
+    --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+        "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+        "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    border-radius: 0.75rem;
+    color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.light {
+    background-color: var(--gray-100);
+    color: #000000;
+    height: 100vh;
+
+    .not-found-page-title {
+        color: var(--gray-700);
+    }
+
+    .title-content {
+        color: var(--gray-600);
+    }
+
+    .subtitle {
+        color: var(--gray-700);
+    }
+
+    .title-project-table {
+        color: var(--gray-600);
+    }
+
+    .date-picker {
+        color: var(--gray-200);
+    }
+
+    .drawer-icon-content {
+        svg {
+            color: var(--gray-600);
+        }
+    }
+
+    .MuiInputBase-root {
+        color: var(--gray-600);
+
+        .MuiSvgIcon-root {
+            color: var(--gray-600);
+        }
+    }
+
+    .MuiButtonBase-root {
+        .MuiSvgIcon-root {
+            color: var(--gray-600);
+        }
+
+        &.Mui-disabled {
+            .MuiSvgIcon-root {
+                color: var(--gray-400);
+            }
+        }
+    }
+
+    h4 {
+        color: var(--gray-600) !important;
+    }
+}
+
+.dark {
+    background-color: var(--gray-800);
+    height: 100vh;
+
+    .not-found-page-title {
+        color: var(--gray-300);
+    }
+
+    .title-content {
+        color: var(--gray-200);
+    }
+
+    .subtitle {
+        color: var(--gray-300);
+    }
+
+    .date-picker {
+        background-color: #1f2937;
+        color: var(--gray-100);
+    }
+
+    .drawer-icon-content {
+        svg {
+            color: var(--gray-200);
+        }
+    }
+
+    .MuiInputBase-root {
+        color: var(--gray-200);
+
+        .MuiSvgIcon-root {
+            color: var(--gray-200);
+        }
+    }
+
+    .MuiButtonBase-root {
+        .MuiSvgIcon-root {
+            color: var(--gray-200);
+        }
+
+        &.Mui-disabled {
+            .MuiSvgIcon-root {
+                color: rgb(84, 83, 83);
+            }
+        }
+    }
+
+    p {
+        color: var(--gray-400);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: var(--gray-200) !important;
+    }
+
+    th {
+        color: var(--gray-400) !important;
+        background-color: var(--gray-800) !important;
+    }
+
+    td {
+        color: var(--gray-200) !important;
+        background-color: var(--gray-800) !important;
+    }
+
+    tr {
+        background-color: var(--gray-800) !important;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}
